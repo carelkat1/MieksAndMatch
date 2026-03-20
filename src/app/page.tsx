@@ -56,13 +56,13 @@ export default function HomePage() {
             {/* Right side - Mieke photo */}
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="https://mieksandmatch.com/wp-content/uploads/2025/07/HL1_5378-681x1024.webp"
+                src="/images/HL1_5378.jpg"
                 alt="Mieke"
                 width={400}
                 height={600}
                 unoptimized
                 priority
-                className="rounded-lg shadow-lg max-w-sm w-full h-auto"
+                className="rounded-lg shadow-lg max-w-sm w-full h-auto object-cover"
               />
             </div>
           </div>
@@ -128,8 +128,8 @@ export default function HomePage() {
             <div className="flex justify-center">
               <div className="relative w-80 h-80">
                 <Image
-                  src="https://mieksandmatch.com/wp-content/uploads/2025/08/MoreAbout3.png"
-                  alt="Mieke"
+                  src="/images/HL1_5134.jpg"
+                  alt="Mieke at work"
                   width={320}
                   height={320}
                   unoptimized

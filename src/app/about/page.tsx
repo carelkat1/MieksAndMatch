@@ -1,11 +1,12 @@
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Star, Shield } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#FFE4EC] to-[#FFF0F5]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-bg-primary to-bg-accent py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-[#E84C88] to-[#FF5757] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-white mb-6">About Mieke & Our Mission</h1>
           <p className="text-xl text-white/90">
@@ -38,11 +39,15 @@ export default function AboutPage() {
                 is secure, and every interaction is backed by our dedication to excellence.
               </p>
             </div>
-            <div className="bg-bg-blush rounded-lg h-80 flex items-center justify-center text-gray-400">
-              <div className="text-center">
-                <span className="text-6xl mb-4 block">📸</span>
-                <p>Mieke & Team Photo Placeholder</p>
-              </div>
+            <div className="rounded-lg overflow-hidden h-80">
+              <Image
+                src="/images/HL1_5356.jpg"
+                alt="Mieke holding coffee"
+                width={400}
+                height={500}
+                unoptimized
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
           </div>
         </section>
