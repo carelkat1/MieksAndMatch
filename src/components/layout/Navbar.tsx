@@ -3,55 +3,44 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "About Us", href: "/about" },
+    { label: "Join the Team", href: "/apply" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary tracking-wide">
-              MIEKS & MATCH
+            <span className="text-2xl font-light tracking-[0.3em] text-primary uppercase">
+              Mieks & Match
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-text hover:text-primary transition-colors font-medium"
+                className="text-charcoal hover:text-primary transition-colors font-medium underline underline-offset-4 decoration-charcoal/30 hover:decoration-primary"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* Desktop Buttons */}
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              Log In
-            </Button>
-            <Button variant="primary" size="sm">
-              Sign Up
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-text"
+            className="md:hidden text-charcoal"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -67,20 +56,12 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text hover:text-primary transition-colors font-medium"
+                  className="text-charcoal hover:text-primary transition-colors font-medium underline underline-offset-4"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 pt-2">
-                <Button variant="outline" size="sm" className="w-full">
-                  Log In
-                </Button>
-                <Button variant="primary" size="sm" className="w-full">
-                  Sign Up
-                </Button>
-              </div>
             </div>
           </div>
         )}

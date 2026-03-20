@@ -1,20 +1,27 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap');
 
 @theme {
   --color-primary: #E84C88;
   --color-secondary: #F9B4D2;
-  --color-accent: #FF6B8A;
+  --color-accent: #FF5757;
   --color-blush: #FFF0F5;
+  --color-pink-light: #FFE4EC;
+  --color-pink-medium: #F7B4C9;
+  --color-pink-dark: #DBA5B8;
   --color-text: #1a1a1a;
   --color-charcoal: #2D2D2D;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
 }
 
 @layer base {
   body {
     font-family: var(--font-sans);
     line-height: 1.6;
+    background: linear-gradient(180deg, #FFE4EC 0%, #FFF0F5 50%, #FFFFFF 100%);
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
