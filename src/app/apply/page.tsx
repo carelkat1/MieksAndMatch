@@ -63,11 +63,11 @@ export default function ApplyPage() {
             Thank you for your interest in joining Mieks & Match.
           </p>
           <p className="text-gray-600 mb-8">
-            We've received your application and will review it within 3-5 business days.
+            We&apos;ve received your application and will review it within 3-5 business days.
             A confirmation email has been sent to {formData.email}.
           </p>
           <p className="text-gray-600 mb-8">
-            We'll be in touch soon with next steps!
+            We&apos;ll be in touch soon with next steps!
           </p>
           <Button
             className="bg-bg-primary hover:bg-bg-accent text-white"

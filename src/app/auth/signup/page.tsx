@@ -53,7 +53,7 @@ export default function SignupPage() {
                 <div className="text-4xl mb-4 group-hover:scale-110 transition">👨‍👩‍👧‍👦</div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900">I Need Help</h3>
                 <p className="text-gray-600 text-sm">
-                  I'm looking for au pairs, chauffeurs, or sitters
+                  I&apos;m looking for au pairs, chauffeurs, or sitters
                 </p>
               </button>
 

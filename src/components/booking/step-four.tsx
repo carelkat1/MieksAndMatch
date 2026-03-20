@@ -83,7 +83,7 @@ export default function BookingStepFour({ bookingData, onConfirm: _onConfirm }: 
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
           <p className="text-sm text-gray-700">
             By confirming this booking, you agree to our terms and conditions. Your payment will be
-            processed securely, and you'll be matched with a provider shortly.
+            processed securely, and you&apos;ll be matched with a provider shortly.
           </p>
         </div>
       </div>

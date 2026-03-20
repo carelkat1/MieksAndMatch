@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-white mb-6">Get in Touch</h1>
           <p className="text-xl text-white/90">
-            Have questions? We'd love to hear from you. Get in touch with our team anytime.
+            Have questions? We&apos;d love to hear from you. Get in touch with our team anytime.
           </p>
         </div>
       </section>

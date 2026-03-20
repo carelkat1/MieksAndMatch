@@ -4,7 +4,7 @@ import type { Database } from '@/types/database';
 import type { CookieOptions } from '@supabase/ssr';
 
 export async function updateSession(request: NextRequest) {
-  let supabaseResponse = NextResponse.next({
+  const supabaseResponse = NextResponse.next({
     request,
   });
 

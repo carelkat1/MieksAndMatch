@@ -40,7 +40,7 @@ export default function BookingStepTwo({
         <div className="bg-bg-blush rounded-lg p-4">
           <p className="text-sm text-gray-700">
             <strong>Note:</strong> Your chosen date and time help us find the best available
-            providers. You'll have a chance to confirm the final schedule with your selected
+            providers. You&apos;ll have a chance to confirm the final schedule with your selected
             provider.
           </p>
         </div>

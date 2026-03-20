@@ -15,7 +15,7 @@ export function TestimonialCard({ name, role, content, rating }: TestimonialCard
           <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
         ))}
       </div>
-      <p className="text-gray-700 mb-4 italic leading-relaxed">"{content}"</p>
+      <p className="text-gray-700 mb-4 italic leading-relaxed">&ldquo;{content}&rdquo;</p>
       <div>
         <p className="font-semibold text-gray-900">{name}</p>
         <p className="text-sm text-gray-600">{role}</p>

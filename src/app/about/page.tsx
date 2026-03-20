@@ -129,7 +129,7 @@ export default function AboutPage() {
         <section className="bg-bg-blush rounded-lg p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Join the Mieks & Match Family</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Whether you're looking for help or wanting to share your skills, we're here to connect
+            Whether you&apos;re looking for help or wanting to share your skills, we&apos;re here to connect
             you with the right opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
